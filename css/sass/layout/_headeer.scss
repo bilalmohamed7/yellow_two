@@ -1,0 +1,93 @@
+/* Start Navbar */
+
+/* Main Navbar */
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-inverse {
+    background-color: $firstColor;
+    font-weight: bold;
+    border-color: $secondColor;
+
+    .navbar-header .navbar-toggle {
+        border-color: $therrColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+    }
+
+    .navbar-header .navbar-toggle {
+        margin-top: 18px;
+
+        &:hover,
+        &:focus {
+            background-color: $secondColor;
+            border-color: $secondColor;
+        }
+    }
+
+    /* toggle */
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $secondColor;
+    }
+
+    .navbar-brand,
+    .navbar-nav > li > a {
+        color: $secondColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus,
+    .navbar-nav > .open > a,
+    .navbar-nav > .open > a:hover,
+    .navbar-nav > .open > a:focus {
+        background-color: $secondColor;
+    }
+
+    .navbar-nav .open .dropdown-menu .divider {
+        background-color: $secondColor;
+    }
+
+    /*Dropdown-menu */
+    .navbar-nav .dropdown-menu {
+        background-color: $firstColor;
+        border-top: 3px solid $secondColor;
+        min-width: 200px;
+
+        > li > a {
+            color: $therrColor;
+            font-weight: bold;
+
+            @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+            &:hover,
+            &:focus {
+                color: $firstColor;
+                background-color: $secondColor;
+                padding-left: 25px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+            color: $secondColor;
+        }
+    }
+}
+
+/* End Navbar */

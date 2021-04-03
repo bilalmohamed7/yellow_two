@@ -1,0 +1,17 @@
+/* Start Navbar */
+/* Main Navbar */
+.navbar {
+  min-height: 70px;
+}
+
+.navbar-inverse {
+  background-color: firstColor;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-inverse .navbar-nav > li > a {
+  color: #eea715;
+}
+
+/* End Navbar */

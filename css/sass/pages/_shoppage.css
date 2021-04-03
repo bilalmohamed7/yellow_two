@@ -1,0 +1,27 @@
+/* Start Global */
+.breadcrumb-holder {
+  background-color: #26143c;
+}
+
+.breadcrumb-holder .breadcrumb {
+  background-color: #26143c;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.breadcrumb-holder .breadcrumb li,
+.breadcrumb-holder .breadcrumb li a {
+  color: #FFF;
+  font-weight: bold;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.breadcrumb-holder .breadcrumb li a:hover {
+  text-decoration: none;
+  color: #eea715;
+}
+
+/* End Global */

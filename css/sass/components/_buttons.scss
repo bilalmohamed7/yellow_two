@@ -1,0 +1,162 @@
+/* Start Btn Features */
+
+.features {
+    .btn {
+        background-color: $therrColor;
+        font-weight: bold;
+        color: $secondColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+        &:hover {
+            background-color: $secondColor;
+            color: $therrColor;
+        }
+    }
+}
+
+/* End Btn Features */
+
+/* Start Btn Section Price Table */
+
+.price_table {
+    .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+        background-image: none;
+    }
+
+    .btn-primary {
+        color: $therrColor;
+        background-color: $primaryColor;
+        border-color: $primaryBorderColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+        &:hover {
+            color: $therrColor;
+            background-color: $hoverPrimaryColor;
+            border-color: $borderPrimaryColor;
+        }
+    }
+
+    .btn-info {
+        color: $therrColor;
+        background-color: $infoColor;
+        border-color: $infoBorderColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+        &:hover {
+            color: $therrColor;
+            background-color: $hoverInfoColor;
+            border-color: $borderInfoColor;
+        }
+    }
+
+    .btn-success {
+        color: $therrColor;
+        background-color: $successColor;
+        border-color: $successBorderColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+        &:hover {
+            color: $therrColor;
+            background-color: $hoverSuccessColor;
+            border-color: $borderSuccessColor;
+        }
+    }
+
+    .btn-danger {
+        color: $therrColor;
+        background-color: $dangerColor;
+        border-color: $dangerBorderColor;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+        &:hover {
+            color: $therrColor;
+            background-color: $hoverDangerColor;
+            border-color: $borderDangerColor;
+        }
+    }
+}
+
+/* End Btn Section Price Table */
+
+/* Start Btn Section Subscribe */
+.subscribe {
+    .form-inline {
+        .btn {
+            background-color: $secondColor;
+            outline: none;
+            color: $firstColor;
+            border-radius: 0;
+            margin-right: 0px;
+        }
+    }
+}
+
+/* End Btn Section Subscribe */
+
+/* Start Section Our Skills */
+.our-skills {
+    .skills-info {
+        .btn {
+            background-color: $therrColor;
+            font-weight: bold;
+            color: $secondColor;
+            outline: none;
+
+            @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+            &:hover {
+                color: $therrColor;
+                background-color: $secondColor;
+            }
+        }
+    }
+}
+
+/* Start Btn Section Contact Us */
+
+.contact-us {
+    .fields {
+        .btn {
+            background-color: $firstColor;
+            font-weight: bold;
+            color: $secondColor;
+            outline: none;
+
+            @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+            &:hover {
+                background-color: $secondColor;
+                color: $therrColor;
+            }
+        }
+    }
+}
+
+/* End Btn Section Contact Us */
+
+/* Start Btn bookonline CEO */
+.bookonline-ceo {
+    .btn-primary {
+        background-color: $therrColor;
+        border-color: $therrColor;
+        color: $secondColor;
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+        @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+        &:hover {
+            background-color: $secondColor;
+            border-color: $secondColor;
+            color: $therrColor;
+        }
+    }
+}
+
+/* End Btn bookonline CEO */

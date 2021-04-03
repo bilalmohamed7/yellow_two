@@ -1,0 +1,177 @@
+/* Start Breadcrumb  */
+
+.breadcrumb-holder {
+    background-color: $firstColor;
+
+    .breadcrumb {
+        background-color: $firstColor;
+        padding: 10px 0;
+        margin: 0;
+
+        li {
+            color: $secondColor;
+            font-weight: bold;
+
+            a {
+                color: $therrColor;
+                font-weight: bold;
+
+                @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+                &:hover {
+                    text-decoration: none;
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}
+
+/* End Breadcrumb  */
+
+/* Start bookonline Intro */
+
+.bookonline {
+    padding: 70px 0;
+    background-color: $firstColor;
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: $therrColor;
+        letter-spacing: -3px;
+        font-size: 62px;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    .lead {
+        color: $therrColor;
+    }
+
+    .img-thumbnail {
+        background-color: $secondColor;
+        border: 1px solid $secondColor;
+    }
+}
+
+/* End bookonline Intro */
+
+/* Start bookonline  Features */
+.bookonline-features {
+    background-color: $firstColor;
+    padding: 0 0 70px;
+    color: $therrColor;
+
+    .fa {
+        color: $secondColor;
+    }
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: -1px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+/* End bookonline  Features */
+
+/* Start bookonline CEO */
+
+.bookonline-ceo {
+    background-color: $firstColor;
+    padding-top: 40px;
+    color: $therrColor;
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+
+    .lead {
+        line-height: 1.8;
+    }
+
+}
+
+/* End bookonline CEO */
+
+/* Start Shop Intro */
+
+.shop {
+    padding: 40px 0;
+    background-color: $firstColor;
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: -3px;
+        font-size: 65px;
+        color: $therrColor;
+
+        ~ hr {
+            width: 70%;
+        }
+    }
+
+    .lead {
+        color: $therrColor;
+    }
+}
+
+/* End Shop Intro */
+
+.shop-questions {
+    background-color: $firstColor;
+
+    .panel {
+        background-color: $firstColor;
+
+        .panel-body {
+            color: $secondColor;
+        }
+    }
+
+    .panel-heading {
+        padding: 20px 15px;
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .panel-default {
+        border-color: $secondColor;
+
+        > .panel-heading {
+            color: $firstColor;
+            background-color: $secondColor;
+            border-color: $secondColor;
+        }
+    }
+
+    .panel-heading {
+        a:after {
+            font-family: 'Glyphicons Halflings';
+            content: "\e114";
+            float: right;
+            color: $therrColor;
+        }
+
+        a.collapsed:after {
+            content: "\e080";
+            color: $firstColor;
+        }
+    }
+}
+
+/* Start Shop Accordion */

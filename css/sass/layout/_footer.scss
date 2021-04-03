@@ -1,0 +1,248 @@
+/* Start Ultimate Footer Section */
+.footer {
+    background-color: $firstColor;
+    color: $therrColor;
+    padding-top: 20px;
+
+    h3 {
+        color: $secondColor;
+        letter-spacing: 1px;
+        margin: 30px 0 20px;
+    }
+
+    .three-columns {
+        overflow: hidden;
+
+        li {
+            color: #AAA;
+            width: 33.33333%;
+            float: left;
+            padding: 5px 0;
+            cursor: pointer;
+
+            @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+            &:hover {
+                color: $secondColor;
+            }
+        }
+    }
+
+    .social-list {
+        overflow: hidden;
+        margin: 20px 0 10px;
+
+        li {
+            float: left;
+            margin-right: 3px;
+            opacity: 0.5;
+            cursor: pointer;
+            filter: alpha(opacity = 70);
+
+            @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .img-thumbnail {
+        background: $backgroundColorOpacityT;
+        border: 1px solid $secondColor;
+        margin-bottom: 5px;
+    }
+
+    .copyright {
+        color: $therrColor;
+        background-color: $backgroundColorFooter;
+        padding: 15px 0;
+        margin-top: 30px;
+        font-size: 18px;
+
+        span {
+            color: $secondColor;
+        }
+    }
+}
+
+/* End Ultimate Footer Section */
+
+/* Start Section Loading */
+.loading-overlay {
+    background: $firstColor;
+    color: $secondColor;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+
+    .spinner {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        margin: 300px auto;
+    }
+
+    .double-bounce1, .double-bounce2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $secondColor;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-animation: bounce 2.0s infinite ease-in-out;
+        animation: bounce 2.0s infinite ease-in-out;
+    }
+
+    .double-bounce2 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+    }
+
+    @-webkit-keyframes bounce {
+        0%, 100% {
+            -webkit-transform: scale(0);
+        }
+
+        50% {
+            -webkit-transform: scale(1);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: scale(0);
+            -webkit-transform: scale(0);
+        }
+
+        50% {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+    }
+}
+
+/* End Section Loading */
+
+/* Start Scrollup */
+#scroll-top {
+    width: 50px;
+    height: 40px;
+    color: $firstColor;
+    background-color: $secondColor;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+
+    @include prefixer(transition, all 0.7s ease-in-out, webkit moz o);
+
+    &:hover {
+        background-color: $therrColor;
+    }
+}
+
+/* End Scrollup */
+
+/* Start Fixed Menu */
+
+.fixed-menu {
+    background-color: $secondColor;
+    color: $therrColor;
+    padding: 10px;
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 100vh;
+    width: 220px;
+    z-index: 9999;
+
+    .fa-gear {
+        position: absolute;
+        right: -30px;
+        top: 90px;
+        background-color: $secondColor;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 0 10px 10px 0;
+        cursor: pointer;
+    }
+
+    .change-colores li {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid $therrColor;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .change-colores [data-color="blue"] {
+        background-color: $colorOne;
+    }
+
+    .change-colores [data-color="red"] {
+        background-color: $colorTwo;
+    }
+
+    .change-colores [data-color="green"] {
+        background-color: $colorThree;
+    }
+
+    .change-colores [data-color="purple"] {
+        background-color: $colorFour;
+    }
+}
+
+/* End Fixed Menu */
+
+/* Start Website Theme Colors */
+
+[data-default-color="blue"] .skin-color {
+    color: $colorOne !important;
+}
+
+[data-default-color="blue"] .skin-background {
+    background-color: $colorOne !important;
+    color: $therrColor !important;
+}
+
+[data-default-color="red"] .skin-color {
+    color: $colorTwo !important;
+}
+
+[data-default-color="red"] .skin-background {
+    background-color: $colorTwo !important;
+    color: $therrColor !important;
+}
+
+[data-default-color="green"] .skin-color {
+    color: $colorThree !important;
+}
+
+[data-default-color="green"] .skin-background {
+    background-color: $colorThree !important;
+    color: $therrColor !important;
+}
+
+[data-default-color="purple"] .skin-color {
+    color: $colorFour !important;
+}
+
+[data-default-color="purple"] .skin-background {
+    background-color: $colorFour !important;
+    color: $therrColor !important;
+}
+
+/* End Website Theme Colors */
